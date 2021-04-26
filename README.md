@@ -4,10 +4,10 @@
 
 <p align='center'>Orgnazing an event is not easy. Getting a good speaker with proper subject knowledge becomes difficult at times. Although speakers can be approached with different social media but not every skilled person wants to be a speaker. Speakers are born not made. SpeakerHub aims to be the one stop solution for finding speakers, speakers will be divided on the basis of their subject knowledge. Speaker Hub will connect orgnizers with speakers and ultimately satisfying the 3 stakeholders</p>
 
-<p float='left'>
-<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh122.png' width='300'>
-<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh123.png' width='300'>
-<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh121.png' width='300'>
+<p float='center' align='center'>
+<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh122.png' width='250'>
+<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh123.png' width='250'>
+<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh121.png' width='250'>
 </p>
 
 
@@ -87,3 +87,5 @@ Please refer to the project's style and contribution guidelines for submitting p
  5. Submit a **Pull request** so that we can review your changes
 
 ### Please abide by  [Contributing Guidelines](https://github.com/betaoverflow/project-speakerhub/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/betaoverflow/project-speakerhub/blob/main/CODE_OF_CONDUCT.md) 🚀
+
+PS. Logo is not ours we don't take the credit for it
