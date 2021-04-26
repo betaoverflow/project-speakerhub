@@ -1,0 +1,95 @@
+.User_Page{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  margin-right: 10px;
+}
+
+.images{
+  margin-top: 60px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.images:hover{
+    transform: scale(1.1);
+}
+
+.user_container{
+  width: 60vw;
+  padding-bottom: 20px;
+  margin-left: 40px;
+  align-content: space-between;
+}
+
+
+p{
+  text-decoration: none;
+  margin: 0;
+  font-size: 25px;
+  padding: 5px;
+}
+
+span{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+li{
+  padding: 5px;
+}
+
+.quote{
+  text-decoration: none;
+  margin: 20px;
+  padding: 5px;
+  background-color: transparent;
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+.User_intro{
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #525866;
+  border-radius: 10px;
+}
+
+.user_name{
+  color: black;
+}
+
+.job, .company{
+  font-weight: 400;
+}
+
+.date{
+  text-align: right;
+  color: gray;
+}
+
+.User_bio{
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.User_past_talks{
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.User_social_media{
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
