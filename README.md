@@ -56,7 +56,7 @@ Navigate to the main project folder in a seperate terminal. Then install all npm
 npm install 
 ```
 
-If you don't have nodemon globally installed on your system, install it so the server will autorefresh 
+If you don't have nodemon globally installed on your system, install it so the server can autorefresh 
 ```bash
 npm install -g nodemon
 ```
