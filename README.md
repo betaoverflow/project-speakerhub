@@ -2,7 +2,7 @@
 
 <h1 align='center'>SpeakerHub </h1>
 
-<p align='center'>Orgnazing an event is not easy. Getting a good speaker with proper subject knowledge becomes difficult at times. Although speakers can be approached with different social media but not every skilled person wants to be a speaker. Speakers are born not made. SpeakerHub aims to be the one stop solution for finding speakers, speakers will be divided on the basis of their subject knowledge. Speaker Hub will connect orgnizers with speakers and ultimately satisfying the 3 stakeholders</p>
+<p align='center'>Orgnazing an event is not easy. Getting in touch with a confident speaker who's an expert on some subject isn't easy. Sure, people can be approached on social media to be a speaker for an event, but not everyone wants to be a speaker. SpeakerHub aims to be the one stop solution for finding and getting in touch with speakers. With speakers divided on the basis of their subject knowledge, you can find the right speaker for your next team gathering, conference, or really any occasion! Speaker Hub  aims to connect organizers with speakers, ultimately satisfying the 3 stakeholders</p>
 
 <p float='center' align='center'>
 <img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh122.png' width='250'>
@@ -51,26 +51,38 @@ The Application Runs on **localhost:3000**
 
 ### To spin up the backend server
 
-In the main project type the following command to install all npm packages
+In a seperate terminal, make sure you're in the main project folder. Then type the following command to install all npm packages
 ```bash
-npm start
+npm install 
 ```
 
-If you don't have nodemon globally installed in your system install it
+If you don't have nodemon globally installed in your system, install it so the server autorefreshes whenever you make changes
 ```bash
 npm install -g nodemon
 ```
 
-Now it's time to spin up the backend server. So run the lines
+Now it's time to spin up the backend server. Run the lines
 ```bash
 nodemon server.js
 ```
-
-### Connecting Database
-Spin up your cluster in MongoDB and replace your connection with URI in `config/keys.js`
-If you face any problem in getting the link of the link of the cluster which is running refer to [MongoDB](https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database)
+If you get an error immediately, don't worry. The final step is to connect to the MongoDB database.
 
 The Server Runs on **localhost:5000**
+
+### Connecting to the Database
+Spin up your cluster in MongoDB and replace your connection with URI in `config/keys.js`
+If you face any problem in getting the link of the cluster which is running, refer to MongoDB [MongoDB](https://www.mongodb.com/blog/post quick-start-nodejs-mongodb--how-to-get-connected-to-your-database). If you are new to MongoDB Atlas, simply follow the instructions below:
+
+Install the MongoDB Node.js Driver with the following command:
+```bash
+npm install mongodb
+```
+
+Set up a [MongoDB Atlas Datbase] (https://www.youtube.com/watch?v=rPqRyYJmx2g) by following this short, sweet video till the *3:20* mark. Make sure to stop at the 3:20 mark!
+
+On your Cluster home page, select CONNECT > Connect your application. Select Node.js in the drop down for your driver, and select the latest version. Then, copy the connecting string (URI). Now, you just have to paste this string as the value of mongoURI inside `config/keys.js` of this project.
+
+Replace the `<password>` section of the string with your MongoDB Atlas. Viola, your server should now successfuly connect to MongoDB and be running.
 
 `Contributions are welcome 🎉🎉`
 
