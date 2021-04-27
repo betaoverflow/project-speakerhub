@@ -74,7 +74,7 @@ Spin up your cluster in MongoDB and replace your connection with URI in `config/
 If you face any problems, refer to the [MongoDB](https://www.mongodb.com/blog/postquick-start-nodejs-mongodb--how-to-get-connected-to-your-database) website.
 
 
-## Connecting to the Database if you are new to MongoDB Atlas
+## Connecting to the Database if you haven't used MongoDB Atlas before
 Install the MongoDB Node.js Driver with the following command:
 ```bash
 npm install mongodb
