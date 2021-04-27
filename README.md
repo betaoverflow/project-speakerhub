@@ -71,16 +71,16 @@ Note: The Server Runs on **localhost:5000**
 
 ### Connecting to the Database
 Spin up your cluster in MongoDB and replace your connection with URI in `config/keys.js`
-If you face any problem in getting the link of the cluster which is running, refer to [MongoDB](https://www.mongodb.com/blog/postquick-start-nodejs-mongodb--how-to-get-connected-to-your-database).
+If you face any problems, refer to the [MongoDB](https://www.mongodb.com/blog/postquick-start-nodejs-mongodb--how-to-get-connected-to-your-database) website.
 
-If you are new to MongoDB Atlas, simply follow the instructions below instead:
+*If you are new to MongoDB Atlas, the instructions below might be simpler to follow:*
 
 Install the MongoDB Node.js Driver with the following command:
 ```bash
 npm install mongodb
 ```
 
-Set up a [MongoDB Atlas Datbase](https://www.youtube.com/watch?v=rPqRyYJmx2g) by following this short, sweet video till the *3:20* mark. Make sure to stop at the 3:20 mark!
+Set up a [MongoDB Atlas Datbase](https://www.youtube.com/watch?v=rPqRyYJmx2g) by following this short, sweet video till the *3:20* mark. Stop there!
 
 On your Cluster home page, select CONNECT > Connect your application. 
 1. Select Node.js in the drop down for your driver, and select the latest version. 
