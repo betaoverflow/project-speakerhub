@@ -80,7 +80,7 @@ Install the MongoDB Node.js Driver with the following command:
 npm install mongodb
 ```
 
-Set up a [MongoDB Atlas Datbase](https://www.youtube.com/watch?v=rPqRyYJmx2g) by following this short MongoDB setup video till the *3:20* mark. Stop after that mark!
+Set up a [MongoDB Atlas Database](https://www.youtube.com/watch?v=rPqRyYJmx2g) by following this short MongoDB setup video till the *3:20* mark. Stop after that mark!
 
 On your Cluster home page, select CONNECT > Connect your application. 
 1. Select Node.js in the drop down for your driver, and select the latest version. 
