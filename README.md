@@ -69,12 +69,12 @@ If you get an error immediately, don't worry. The final step is to connect to th
 
 Note: The Server Runs on **localhost:5000**
 
-### Connecting to the Database
+## Connecting to the Database
 Spin up your cluster in MongoDB and replace your connection with URI in `config/keys.js`
 If you face any problems, refer to the [MongoDB](https://www.mongodb.com/blog/postquick-start-nodejs-mongodb--how-to-get-connected-to-your-database) website.
 
-*If you are new to MongoDB Atlas, the instructions below might be simpler to follow:*
 
+## Connecting to the Database if you are new to MongoDB Atlas
 Install the MongoDB Node.js Driver with the following command:
 ```bash
 npm install mongodb
