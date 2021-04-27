@@ -51,12 +51,12 @@ The Application Runs on **localhost:3000**
 
 ### To spin up the backend server
 
-In a seperate terminal, make sure you're in the main project folder. Then type the following command to install all npm packages
+Navigate to the main project folder in a seperate terminal. Then install all npm packages
 ```bash
 npm install 
 ```
 
-If you don't have nodemon globally installed in your system, install it so the server autorefreshes whenever you make changes
+If you don't have nodemon globally installed on your system, install it so the server will autorefresh 
 ```bash
 npm install -g nodemon
 ```
@@ -67,24 +67,29 @@ nodemon server.js
 ```
 If you get an error immediately, don't worry. The final step is to connect to the MongoDB database.
 
-The Server Runs on **localhost:5000**
+Note: The Server Runs on **localhost:5000**
 
 ### Connecting to the Database
 Spin up your cluster in MongoDB and replace your connection with URI in `config/keys.js`
-If you face any problem in getting the link of the cluster which is running, refer to MongoDB [MongoDB](https://www.mongodb.com/blog/post quick-start-nodejs-mongodb--how-to-get-connected-to-your-database). If you are new to MongoDB Atlas, simply follow the instructions below:
+If you face any problem in getting the link of the cluster which is running, refer to [MongoDB](https://www.mongodb.com/blog/postquick-start-nodejs-mongodb--how-to-get-connected-to-your-database).
+
+If you are new to MongoDB Atlas, simply follow the instructions below instead:
 
 Install the MongoDB Node.js Driver with the following command:
 ```bash
 npm install mongodb
 ```
 
-Set up a [MongoDB Atlas Datbase] (https://www.youtube.com/watch?v=rPqRyYJmx2g) by following this short, sweet video till the *3:20* mark. Make sure to stop at the 3:20 mark!
+Set up a [MongoDB Atlas Datbase](https://www.youtube.com/watch?v=rPqRyYJmx2g) by following this short, sweet video till the *3:20* mark. Make sure to stop at the 3:20 mark!
 
-On your Cluster home page, select CONNECT > Connect your application. Select Node.js in the drop down for your driver, and select the latest version. Then, copy the connecting string (URI). Now, you just have to paste this string as the value of mongoURI inside `config/keys.js` of this project.
+On your Cluster home page, select CONNECT > Connect your application. 
+1. Select Node.js in the drop down for your driver, and select the latest version. 
+1. Then, copy the connecting string (URI).
+1. Paste this string as the value of mongoURI inside `config/keys.js` of this project.
 
-Replace the `<password>` section of the string with your MongoDB Atlas. Viola, your server should now successfuly connect to MongoDB and be running.
+Replace the `<password>` section of the string with your Database Access password. Viola, your server should now successfuly connect to MongoDB!
 
-`Contributions are welcome 🎉🎉`
+`Contributions are always welcome 🎉🎉`
 
 # Ways to contribute:
 1. Solve the issues which are listed
