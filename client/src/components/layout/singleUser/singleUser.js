@@ -27,13 +27,19 @@ function SingleUser({match})
         <div>
             {user && user.map(user => (
                 <div key={user._id}  style={{ backgroundColor: "#fafafa" }}>
-                  <UserDetails
-                    key={user._id}
-                    username={user.name}
-                    contact={user.email}/>
+                   <UserDetails
+                        key={user._id}
+                        username={user.name}
+                        contact={user.email}
+                        job={user.profession}   
+                        company={user.company_name} 
+                        bio={user.bio}
+                        pasttalks1={user.past_talks[0]}
+                        pasttalks2={user.past_talks[1]}
+                        pasttalks3={user.past_talks[2]}
+                        pasttalks4={user.past_talks[3]} 
+                    />
                 </div>
-
-
             ))}
         </div>
     )

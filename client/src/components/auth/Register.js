@@ -19,7 +19,7 @@ class Register extends Component {
       past_talks2: "",
       past_talks3: "",
       past_talks4: "",
-      profile_image: "",
+      profile_image: null,
       bio: "",
       facebook: "",
       instagram: "",
@@ -59,12 +59,14 @@ class Register extends Component {
       company_name: this.state.company_name,
       facebook: this.state.facebook,
       instagram: this.state.instagram,
-      past_talks: this.state.past_talks,
-      past_talks2: this.state.past_talks2,
-      past_talks3: this.state.past_talks3,
-      past_talks4: this.state.past_talks4,
+      past_talks: [this.state.past_talks,
+         this.state.past_talks2,
+         this.state.past_talks3,
+         this.state.past_talks4],
       profile_image: this.state.profile_image
     };
+    
+    console.log(newUser.profile_image);
 
     this.props.registerUser(newUser, this.props.history);
   };
@@ -270,17 +272,17 @@ class Register extends Component {
               </div>
 
               <div className="input-field col s12">
+              <label htmlFor="profile_image" style={{ marginTop: "-10px"}}>Profile Image</label>
                 <input
+                  style={{ paddingLeft: "100px"}}
                   onChange={this.onChange}
                   value={this.state.profile_image}
-                  error={errors.profile_image}
                   id="profile_image"
-                  type="image"
+                  type="file"
                   className={classnames("", {
                     invalid: errors.profile_image
                   })}
                 />
-              <label htmlFor="profile_image">Profile Image</label>
                 <span className="red-text">{errors.profile_image}</span>
               </div>
 

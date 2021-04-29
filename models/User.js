@@ -25,11 +25,9 @@ const UserSchema = new Schema({
   },
   facebook: {
     type: String,
-    required: true
   },
   instagram: {
     type: String,
-    required: true
   },
   profession: {
     type: String,
@@ -40,7 +38,7 @@ const UserSchema = new Schema({
     required: true
   },
   past_talks:{
-    type: String,
+    type: [String],
     required: true
   },
   profile_image:{
