@@ -65,8 +65,6 @@ class Register extends Component {
          this.state.past_talks4],
       profile_image: this.state.profile_image
     };
-    
-    console.log(newUser.profile_image);
 
     this.props.registerUser(newUser, this.props.history);
   };
