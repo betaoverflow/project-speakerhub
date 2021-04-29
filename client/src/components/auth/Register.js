@@ -277,6 +277,7 @@ class Register extends Component {
                   value={this.state.profile_image}
                   id="profile_image"
                   type="file"
+                  accept="image/*"
                   className={classnames("", {
                     invalid: errors.profile_image
                   })}
