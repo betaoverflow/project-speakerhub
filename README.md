@@ -1,4 +1,7 @@
 <p align='center'> <img src='https://www.jing.fm/clipimg/full/70-706780_echo-fox-logo-png-cool-fox-logos.png' width='100'> </p>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <h1 align='center'>SpeakerHub </h1>
 
@@ -106,3 +109,23 @@ Please refer to the project's style and contribution guidelines for submitting p
 ### Please abide by  [Contributing Guidelines](https://github.com/betaoverflow/project-speakerhub/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/betaoverflow/project-speakerhub/blob/main/CODE_OF_CONDUCT.md) 🚀
 
 PS. Logo is not ours we don't take the credit for it
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/ArcaneWizard"><img src="https://avatars.githubusercontent.com/u/42625247?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Raghav Narula</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=ArcaneWizard" title="Code">💻</a> <a href="https://github.com/betaoverflow/project-speakerhub/commits?author=ArcaneWizard" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
