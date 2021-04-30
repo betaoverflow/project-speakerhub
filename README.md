@@ -117,6 +117,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/ArcaneWizard"><img src="https://avatars.githubusercontent.com/u/42625247?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Raghav Narula</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=ArcaneWizard" title="Code">💻</a> <a href="https://github.com/betaoverflow/project-speakerhub/commits?author=ArcaneWizard" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Sonakshi1901"><img src="https://avatars.githubusercontent.com/u/76627480?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sonakshi Satpathy</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=Sonakshi1901" title="Code">💻</a> <a href="#ideas-Sonakshi1901" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
