@@ -2,6 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Card from "./Card/Card";
 import SearchBar from "./SearchBar/SearchBar";
+import Hero from './Hero';
 
 function Landing()
 {
@@ -28,9 +29,12 @@ function Landing()
 
 
  return (
+<div>
+  <Hero/>
     <div
       style={{ height: "100vh", width:"100vw", marginTop: '5%'}}
       className="container valign-wrapper">
+        
       <div className="row">
         <div className="col s12 center-align">
           <h4>
@@ -52,6 +56,7 @@ function Landing()
           <br />
         </div>
       </div>
+    </div>
     </div>
   );
 }
