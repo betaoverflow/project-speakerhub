@@ -5,9 +5,7 @@
 <p align='center'>Organizing an event is not easy. Getting in touch with a confident speaker who's an expert on some subject can be hard. SpeakerHub aims to be the one stop solution for finding and getting in touch with speakers. With speakers divided up by subject knowledge, you can find the right speaker for your next team gathering, tech conference, or really any occasion! No more approaching people on social media and struggling to find a speaker for an event. Speaker Hub  aims to connect organizers with speakers, making life easier for everyone and satisfying our 3 stakeholders</p>
 
 <p float='center' align='center'>
-<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh122.png' width='250'>
-<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh123.png' width='250'>
-<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh121.png' width='250'>
+<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/landing_page.png' width='750'>
 </p>
 
 
@@ -118,6 +116,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/ArcaneWizard"><img src="https://avatars.githubusercontent.com/u/42625247?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Raghav Narula</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=ArcaneWizard" title="Code">💻</a> <a href="https://github.com/betaoverflow/project-speakerhub/commits?author=ArcaneWizard" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Sonakshi1901"><img src="https://avatars.githubusercontent.com/u/76627480?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sonakshi Satpathy</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=Sonakshi1901" title="Code">💻</a> <a href="#ideas-Sonakshi1901" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://sumana.live/"><img src="https://avatars.githubusercontent.com/u/63084088?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sumana Basu</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=sumana2001" title="Code">💻</a></td>
+    <td align="center"><a href="https://aniket.live"><img src="https://avatars.githubusercontent.com/u/67703407?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=Aniket762" title="Code">💻</a> <a href="#design-Aniket762" title="Design">🎨</a> <a href="#projectManagement-Aniket762" title="Project Management">📆</a> <a href="#ideas-Aniket762" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-Aniket762" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/betaoverflow/project-speakerhub/commits?author=Aniket762" title="Documentation">📖</a></td>
   </tr>
 </table>
 
