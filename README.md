@@ -5,9 +5,7 @@
 <p align='center'>Organizing an event is not easy. Getting in touch with a confident speaker who's an expert on some subject can be hard. SpeakerHub aims to be the one stop solution for finding and getting in touch with speakers. With speakers divided up by subject knowledge, you can find the right speaker for your next team gathering, tech conference, or really any occasion! No more approaching people on social media and struggling to find a speaker for an event. Speaker Hub  aims to connect organizers with speakers, making life easier for everyone and satisfying our 3 stakeholders</p>
 
 <p float='center' align='center'>
-<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh122.png' width='250'>
-<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh123.png' width='250'>
-<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/docs/sh121.png' width='250'>
+<img src='https://github.com/betaoverflow/project-speakerhub/blob/main/landing_page.png' width='750'>
 </p>
 
 
