@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Card from "./Card/Card";
 import SearchBar from "./SearchBar/SearchBar";
 import Hero from './Hero';
+import About from "./About";
 
 function Landing()
 {
@@ -31,6 +32,7 @@ function Landing()
  return (
 <div>
   <Hero/>
+  <About/>
     <div
       style={{ height: "100vh", width:"100vw", marginTop: '5%'}}
       className="container valign-wrapper">
