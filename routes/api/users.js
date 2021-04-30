@@ -44,8 +44,9 @@ router.get(`/:id`, async (req, res) =>
 // @desc Register user
 // @access Public
 router.post("/register", (req, res) => {
-  // Form validation
 
+  // Form validation
+  const pastTalks = req.body.past_talks;
   const { errors, isValid } = validateRegisterInput(req.body);
 
   // Check validation
@@ -61,10 +62,13 @@ router.post("/register", (req, res) => {
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
+        facebook: req.body.facebook,
+        instagram: req.body.instagram,
         bio: req.body.bio,
         profession: req.body.profession,
-        past_talks: req.body.past_talks,
+        past_talks: pastTalks,
         company_name: req.body.company_name,
+        profile_image: req.body.profile_image
       });
 
       // Hash password before saving in database

@@ -12,7 +12,10 @@ module.exports = function validateRegisterInput(data) {
   data.bio = !isEmpty(data.bio) ? data.bio : "";
   data.profession = !isEmpty(data.profession) ? data.profession : "";
   data.company_name = !isEmpty(data.company_name) ? data.company_name : "";
-  data.past_talks = !isEmpty(data.past_talks) ? data.past_talks : "";
+  data.instagram = !isEmpty(data.instagram) ? data.instagram : "";
+  data.facebook = !isEmpty(data.facebook) ? data.facebook : "";
+  data.past_talks = !isEmpty(data.past_talks[0]) ? data.past_talks[0] : "";
+
   // Name checks
   if (Validator.isEmpty(data.name)) {
     errors.name = "Name field is required";
@@ -56,6 +59,20 @@ module.exports = function validateRegisterInput(data) {
 
   if (!Validator.equals(data.password, data.password2)) {
     errors.password2 = "Passwords must match";
+  }
+
+  //if Instragram URL is entered, it must be valid (entering one is optional though)
+  if (!Validator.isURL(data.instagram) && data.instagram != "") {
+    errors.instagram = "Invalid URL entered for Instagram. Either remove it or fix it."
+  }
+
+  //if Facebook URL is entered, it must be valid (entering one is optional though)
+  if (!Validator.isURL(data.facebook) && data.facebook != "") {
+    errors.facebook = "Invalid URL entered for Facebook. Either remove it or fix it."
+  }
+
+  if (data.profile_image == null) {
+    errors.profile_image = "This field is required";
   }
 
   return {

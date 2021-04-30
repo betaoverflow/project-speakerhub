@@ -29,7 +29,7 @@ export default function UserDetails(props) {
 
       <div className="User_bio">
        <p>Bio</p>
-       <p className="info"><span>(Something about yourself)</span>{props.bio}</p>
+       <p className="info"><span></span>{props.bio}</p>
       </div>
 
       <div className="User_past_talks">

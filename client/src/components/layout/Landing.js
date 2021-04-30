@@ -46,7 +46,7 @@ function Landing()
                paddingTop: "10px",
 
                }}>
-              {users && users.map(user => <Link to={`id/${ user._id }`}><Card key={user._id} name={user.name} /></Link>)}
+              {users && users.map(user => <Link to={`id/${ user._id }`}><Card key={user._id} name={user.name} job={user.profession} bio={user.bio}/></Link>)}
              </div>
 
           <br />
