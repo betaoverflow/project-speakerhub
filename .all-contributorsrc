@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ArcaneWizard",
+      "name": "Raghav Narula",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42625247?v=4",
+      "profile": "https://github.com/ArcaneWizard",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "project-speakerhub",
+  "projectOwner": "betaoverflow",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
