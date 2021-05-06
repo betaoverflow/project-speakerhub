@@ -46,31 +46,27 @@ class Register extends Component {
     this.setState({ [e.target.id]: e.target.value });
   };
 
-  onFileChange = e => {
-    this.setState({ [e.target.id]: e.target.files[0] });
-  };
-
   onSubmit = e => {
     e.preventDefault();
 
-      const newUser = {
-        name: this.state.name,
-        email: this.state.email,
-        password: this.state.password,
-        password2: this.state.password2,
-        bio: this.state.bio,
-        profession: this.state.profession,
-        company_name: this.state.company_name,
-        facebook: this.state.facebook,
-        instagram: this.state.instagram,
-        past_talks: [this.state.past_talks,
-        this.state.past_talks2,
-        this.state.past_talks3,
-        this.state.past_talks4],
-        profile_image: this.state.profile_image
-      };
+    const newUser = {
+      name: this.state.name,
+      email: this.state.email,
+      password: this.state.password,
+      password2: this.state.password2,
+      bio: this.state.bio,
+      profession: this.state.profession,
+      company_name: this.state.company_name,
+      facebook: this.state.facebook,
+      instagram: this.state.instagram,
+      past_talks: [this.state.past_talks,
+         this.state.past_talks2,
+         this.state.past_talks3,
+         this.state.past_talks4],
+      profile_image: this.state.profile_image
+    };
 
-      this.props.registerUser(newUser, this.props.history);
+    this.props.registerUser(newUser, this.props.history);
   };
 
   render() {
@@ -119,7 +115,7 @@ class Register extends Component {
                     invalid: errors.profession
                   })}
                 />
-                <label htmlFor="profession">Profession</label>
+              <label htmlFor="profession">Profession</label>
                 <span className="red-text">{errors.profession}</span>
               </div>
 
@@ -134,7 +130,7 @@ class Register extends Component {
                     invalid: errors.company_name
                   })}
                 />
-                <label htmlFor="company_name">Name of the Company</label>
+              <label htmlFor="company_name">Name of the Company</label>
                 <span className="red-text">{errors.company_name}</span>
               </div>
 
@@ -149,7 +145,7 @@ class Register extends Component {
                     invalid: errors.bio
                   })}
                 />
-                <label htmlFor="Bio">Bio</label>
+              <label htmlFor="Bio">Bio</label>
                 <span className="red-text">{errors.bio}</span>
               </div>
 
@@ -194,7 +190,7 @@ class Register extends Component {
                     invalid: errors.past_talks4
                   })}
                 />
-                <label htmlFor="past_talks">Past Talks and Presentations</label>
+              <label htmlFor="past_talks">Past Talks and Presentations</label>
                 <span className="red-text">{errors.past_talks}</span>
               </div>
 
@@ -254,7 +250,7 @@ class Register extends Component {
                     invalid: errors.facebook
                   })}
                 />
-                <label htmlFor="facebook">Facebook</label>
+              <label htmlFor="facebook">Facebook</label>
                 <span className="red-text">{errors.facebook}</span>
               </div>
 
@@ -269,15 +265,16 @@ class Register extends Component {
                     invalid: errors.instagram
                   })}
                 />
-                <label htmlFor="instagram">Instagram</label>
+              <label htmlFor="instagram">Instagram</label>
                 <span className="red-text">{errors.instagram}</span>
               </div>
 
               <div className="input-field col s12">
-                <label htmlFor="profile_image" style={{ marginTop: "-10px" }}>Profile Image</label>
+              <label htmlFor="profile_image" style={{ marginTop: "-10px"}}>Profile Image</label>
                 <input
-                  style={{ paddingLeft: "100px" }}
-                  onChange={this.onFileChange}
+                  style={{ paddingLeft: "100px"}}
+                  onChange={this.onChange}
+                  value={this.state.profile_image}
                   id="profile_image"
                   type="file"
                   accept="image/*"

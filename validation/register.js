@@ -15,7 +15,6 @@ module.exports = function validateRegisterInput(data) {
   data.instagram = !isEmpty(data.instagram) ? data.instagram : "";
   data.facebook = !isEmpty(data.facebook) ? data.facebook : "";
   data.past_talks = !isEmpty(data.past_talks[0]) ? data.past_talks[0] : "";
-  data.profile_image = !isEmpty(data.profile_image) ? data.profile_image : "";
 
   // Name checks
   if (Validator.isEmpty(data.name)) {
@@ -72,7 +71,7 @@ module.exports = function validateRegisterInput(data) {
     errors.facebook = "Invalid URL entered for Facebook. Either remove it or fix it."
   }
 
-  if (Validator.isEmpty(data.profile_image)) {
+  if (data.profile_image == null) {
     errors.profile_image = "This field is required";
   }
 

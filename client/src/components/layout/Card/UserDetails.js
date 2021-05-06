@@ -5,7 +5,7 @@ export default function UserDetails(props) {
   return(
     <section className="User_Page">
      <div className="User_Image">
-      <img className="images" src={props.profile_image}/>
+      <img className="images" src="https://leebyron.com/_next/static/images/me-c4e5529383c4d9314b95ef084571f150.jpg"/>
      </div>
 
      <div className="user_container">

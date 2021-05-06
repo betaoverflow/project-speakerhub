@@ -37,8 +37,7 @@ function SingleUser({match})
                         pasttalks1={user.past_talks[0]}
                         pasttalks2={user.past_talks[1]}
                         pasttalks3={user.past_talks[2]}
-                        pasttalks4={user.past_talks[3]}
-                        profile_image={user.profile_image} 
+                        pasttalks4={user.past_talks[3]} 
                     />
                 </div>
             ))}

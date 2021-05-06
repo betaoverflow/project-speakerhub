@@ -72,9 +72,7 @@
   bottom: 100%;
   left: 25px;
   z-index: 1;
-  object-fit: cover;
-  width: 90px;
-  height:90px;
+  max-width: 90px;
   opacity: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
