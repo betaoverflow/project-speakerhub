@@ -49,7 +49,7 @@ const fileStorageEngine = multer.diskStorage({
     cb(null, "./client/public/fileUploads/profilePics")
   },
   filename: (req, file, cb) => {
-    cb(null, Date.now() + "--" + file.originalname);
+    cb(null, file.originalname + ".png");
   }
 })
 
@@ -57,6 +57,8 @@ const fileStorageEngine = multer.diskStorage({
 const upload = multer({ storage: fileStorageEngine });
 
 app.post("/single", upload.single("profileImage"), (req, res) => {
-  console.log(req.file);
-  res.send((req.file.path).substring(13));
+  if (req.file != null)
+      res.send((req.file.path).substring(13));
+  else
+      res.send("file is null");
 });

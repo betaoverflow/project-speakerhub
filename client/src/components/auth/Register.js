@@ -53,16 +53,6 @@ class Register extends Component {
   onSubmit = e => {
     e.preventDefault();
 
-    //Handle file data (specifically, the profile image)
-    const data = new FormData();
-    data.append("profileImage", this.state.profile_image);
-
-    fetch("/single", {
-      method: "POST",
-      body: data,
-    }).then(res => res.text()).then(pathName => {
-      pathName = (this.state.profile_image == null) ? null : pathName;
-
       const newUser = {
         name: this.state.name,
         email: this.state.email,
@@ -77,13 +67,10 @@ class Register extends Component {
         this.state.past_talks2,
         this.state.past_talks3,
         this.state.past_talks4],
-        profile_image: pathName
+        profile_image: this.state.profile_image
       };
 
       this.props.registerUser(newUser, this.props.history);
-    }).catch(err => {
-      console.log(err.message);
-    });
   };
 
   render() {

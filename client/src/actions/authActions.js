@@ -6,16 +6,43 @@ import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types";
 
 // Register User
 export const registerUser = (userData, history) => dispatch => {
+
+  let success = false;
+
+  //user stores the potential server path of their profile image 
+  const profileImage = userData.profile_image;
+  console.log(profileImage);
+
+  userData.profile_image = (profileImage != null) ? ("/fileUploads/profilePics/" + userData.email + ".png") : "";
+  console.log(userData.profile_image);
+
   axios
     .post("/api/users/register", userData)
-    .then(res => history.push("/login"))
+    .then(res => {
+      
+      //Handle file data 
+      const data = new FormData();
+      data.append("profileImage", profileImage, userData.email);
+
+      //post profile image into server folder 
+      fetch("/single", {
+        method: "POST",
+        body: data,
+      }).then(res => res.text()).then(pathName => {
+        console.log(pathName);
+      }).catch(err => {
+        console.log(err);
+      })
+
+      history.push("/login");
+    })
     .catch(err =>
       dispatch({
         type: GET_ERRORS,
         payload: err.response.data
       })
     );
-};
+  }
 
 // Login - get user token
 export const loginUser = userData => dispatch => {
