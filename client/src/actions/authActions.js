@@ -7,8 +7,6 @@ import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types";
 // Register User
 export const registerUser = (userData, history) => dispatch => {
 
-  let success = false;
-
   //user stores the potential server path of their profile image 
   const profileImage = userData.profile_image;
   console.log(profileImage);
@@ -19,7 +17,7 @@ export const registerUser = (userData, history) => dispatch => {
   axios
     .post("/api/users/register", userData)
     .then(res => {
-      
+
       //Handle file data 
       const data = new FormData();
       data.append("profileImage", profileImage, userData.email);
