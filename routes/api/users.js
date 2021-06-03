@@ -49,7 +49,7 @@ router.post("/register", (req, res) => {
     if (user) {
       return res.status(400).json({ email: "Email already exists" });
     } else {
-      console.log(req.body.profile_image)
+      console.log(req.body.profile_image);
       const newUser = new User({
         name: req.body.name,
         email: req.body.email,
@@ -156,8 +156,10 @@ verifyAccessToken = (req, res, next) => {
           : err.message;
       return res.sendStatus(401).send({ err: message });
     }
-    console.log(payload)
-    passport.authenticate('passport',{ session: false })(req, res, () => next());
+    console.log(payload);
+    passport.authenticate("passport", { session: false })(req, res, () =>
+      next()
+    );
   });
 };
 
@@ -166,28 +168,38 @@ verifyAccessToken = (req, res, next) => {
 // @access To users who have logged in
 router.put("/", verifyAccessToken, (req, res) => {
   const pastTalks = req.body.past_talks;
-  const { errors, isValid } = validateRegisterInput(req.body);
+  const { errors, isValid } = validateRegisterInput({
+    ...req.body,
+    password: "123456", //not needed
+    password2: "123456",//not needed
+  });
 
   // Check validation
   if (!isValid) {
     return res.status(400).json(errors);
   }
 
-  User.findOneAndUpdate({ email: req.body.email },{name: req.body.name,
-    email: req.body.email,
-    password: req.body.password,
-    facebook: req.body.facebook,
-    instagram: req.body.instagram,
-    bio: req.body.bio,
-    profession: req.body.profession,
-    past_talks: pastTalks,
-    company_name: req.body.company_name,
-    profile_image: req.body.profile_image,},{new:true}).then((user) => {
-    res.send({user:user})
+  User.findOneAndUpdate(
+    { email: req.body.email },
+    {
+      name: req.body.name,
+      email: req.body.email,
+      facebook: req.body.facebook,
+      instagram: req.body.instagram,
+      bio: req.body.bio,
+      profession: req.body.profession,
+      past_talks: pastTalks,
+      company_name: req.body.company_name,
+      profile_image: req.body.profile_image,
+    },
+    { new: true }
+  )
+    .then((user) => {
+      res.send({ user: user });
     })
-    .catch(err=>{
-      console.error(err)
-      res.sendStatus(500).send('Some error occured.Try again')
-    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500).send("Some error occured.Try again");
+    });
 });
 module.exports = router;
