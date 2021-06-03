@@ -5,7 +5,7 @@ export default function UserDetails(props) {
   return(
     <section className="User_Page">
      <div className="User_Image">
-      <img className="images" src={props.profile_image}/>
+      <img className="images" src={props.profile_image} alt=''/>
      </div>
 
      <div className="user_container">
