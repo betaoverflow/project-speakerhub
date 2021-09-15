@@ -11,7 +11,7 @@
 
 [![Starware](https://img.shields.io/badge/⭐-Starware-f5a91a?labelColor=black)](https://github.com/zepfietje/starware)
 
-Project-orsi is Starware.  
+project-speakerhub is Starware.  
 This means you're free to use the project, as long as you star its GitHub repository.  
 Your appreciation makes us grow and glow up. ⭐
 
@@ -105,26 +105,3 @@ Please refer to the project's style and contribution guidelines for submitting p
 
 PS. Logo is not ours we don't take the credit for it
 
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/ArcaneWizard"><img src="https://avatars.githubusercontent.com/u/42625247?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Raghav Narula</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=ArcaneWizard" title="Code">💻</a> <a href="https://github.com/betaoverflow/project-speakerhub/commits?author=ArcaneWizard" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/Sonakshi1901"><img src="https://avatars.githubusercontent.com/u/76627480?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sonakshi Satpathy</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=Sonakshi1901" title="Code">💻</a> <a href="#ideas-Sonakshi1901" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://sumana.live/"><img src="https://avatars.githubusercontent.com/u/63084088?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sumana Basu</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=sumana2001" title="Code">💻</a></td>
-    <td align="center"><a href="https://aniket.live"><img src="https://avatars.githubusercontent.com/u/67703407?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=Aniket762" title="Code">💻</a> <a href="#design-Aniket762" title="Design">🎨</a> <a href="#projectManagement-Aniket762" title="Project Management">📆</a> <a href="#ideas-Aniket762" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-Aniket762" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/betaoverflow/project-speakerhub/commits?author=Aniket762" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/devanshgl66"><img src="https://avatars.githubusercontent.com/u/47171130?v=4?s=100" width="100px;" alt=""/><br /><sub><b>devanshgl66</b></sub></a><br /><a href="https://github.com/betaoverflow/project-speakerhub/commits?author=devanshgl66" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
